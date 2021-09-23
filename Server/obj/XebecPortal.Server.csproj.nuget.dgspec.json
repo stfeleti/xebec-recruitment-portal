@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj": {}
+    "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
+    "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj",
         "projectName": "XebecPortal.Client",
-        "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj",
-        "packagesPath": "C:\\Users\\Tshegofatso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\obj\\",
+        "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj",
+        "packagesPath": "C:\\Users\\Iviwe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tshegofatso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iviwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
-                "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
+              "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
+                "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
               }
             }
           }
@@ -76,7 +76,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.8, 5.0.8]"
+              "version": "[5.0.9, 5.0.9]"
             }
           ],
           "frameworkReferences": {
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -93,21 +93,21 @@
         }
       }
     },
-    "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj": {
+    "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
         "projectName": "XebecPortal.Server",
-        "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
-        "packagesPath": "C:\\Users\\Tshegofatso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Server\\obj\\",
+        "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
+        "packagesPath": "C:\\Users\\Iviwe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tshegofatso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iviwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -122,11 +122,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
-                "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj"
+              "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
+                "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj"
               },
-              "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
-                "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
+              "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
+                "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
               }
             }
           }
@@ -164,25 +164,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
+    "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
         "projectName": "XebecPortal.Shared",
-        "projectPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
-        "packagesPath": "C:\\Users\\Tshegofatso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tshegofatso\\source\\repos\\xebec-recruitment-portal\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
+        "packagesPath": "C:\\Users\\Iviwe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tshegofatso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iviwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -223,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
