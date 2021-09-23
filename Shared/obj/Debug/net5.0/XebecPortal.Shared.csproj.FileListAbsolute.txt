@@ -1,0 +1,12 @@
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\bin\Debug\net5.0\XebecPortal.Shared.deps.json
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\bin\Debug\net5.0\XebecPortal.Shared.dll
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\bin\Debug\net5.0\ref\XebecPortal.Shared.dll
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\bin\Debug\net5.0\XebecPortal.Shared.pdb
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.csproj.AssemblyReference.cache
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfoInputs.cache
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfo.cs
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.dll
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\ref\XebecPortal.Shared.dll
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.pdb
