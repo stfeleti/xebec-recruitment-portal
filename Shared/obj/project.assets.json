@@ -8,25 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Iviwe\\.nuget\\packages\\": {},
+    "C:\\Users\\Teboho\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iviwe\\Source\\Repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
       "projectName": "XebecPortal.Shared",
-      "projectPath": "C:\\Users\\Iviwe\\Source\\Repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
-      "packagesPath": "C:\\Users\\Iviwe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iviwe\\Source\\Repos\\xebec-recruitment-portal\\Shared\\obj\\",
+      "projectPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj",
+      "packagesPath": "C:\\Users\\Teboho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Iviwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Teboho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

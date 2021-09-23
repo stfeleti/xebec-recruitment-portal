@@ -874,25 +874,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Iviwe\\.nuget\\packages\\": {},
+    "C:\\Users\\Teboho\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
       "projectName": "XebecPortal.Server",
-      "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
-      "packagesPath": "C:\\Users\\Iviwe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Server\\obj\\",
+      "projectPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Server\\XebecPortal.Server.csproj",
+      "packagesPath": "C:\\Users\\Teboho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Iviwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Teboho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -907,11 +907,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
-              "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj"
+            "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj": {
+              "projectPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Client\\XebecPortal.Client.csproj"
             },
-            "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
-              "projectPath": "C:\\Users\\Iviwe\\source\\repos\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
+            "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj": {
+              "projectPath": "C:\\Users\\Teboho\\OneDrive - Nebula\\Documents\\GitHub\\xebec-recruitment-portal\\Shared\\XebecPortal.Shared.csproj"
             }
           }
         }
