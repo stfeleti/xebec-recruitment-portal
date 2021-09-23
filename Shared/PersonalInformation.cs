@@ -7,7 +7,7 @@ namespace Shared
 {
     public class PersonalInformation
     {
-        public int Id { get; set; }
+        public int PersonalInfomationId { get; set; }
 
         public string FirstName { get; set; }
 

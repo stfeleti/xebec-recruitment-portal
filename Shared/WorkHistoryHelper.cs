@@ -9,7 +9,7 @@ namespace XebecPortal.Shared
 {
    public class WorkHistoryHelper
     {
-        public int Id { get; set; }
+        public int WorkHistoryHelperId { get; set; }
 
         //foreign key
         public int UserId { get; set; }
