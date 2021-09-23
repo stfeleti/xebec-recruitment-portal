@@ -9,7 +9,7 @@ namespace XebecPortal.Shared
 {
     public class DocumentHelper
     {
-        public int DocumentHelperId { get; set; }
+        public int Id { get; set; }
 
         //Foreign Key: User
         public int UserId { get; set; }

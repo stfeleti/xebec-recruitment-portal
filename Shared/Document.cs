@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
    public class Document
     {
-        public int DocumentId { get; set; }
+        public int Id { get; set; }
 
         public string DocumentName { get; set; }
 

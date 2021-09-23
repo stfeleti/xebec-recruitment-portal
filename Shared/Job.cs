@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
     public class Job
     {
-        public int JobID { get; set; }
+        public int Id { get; set; }
 
         public string Title { get; set; }
 
@@ -20,7 +20,7 @@ namespace XebecPortal.Shared
 
         public DateTime DueDate { get; set; }
 
-        public DateTime creationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
     }
 }

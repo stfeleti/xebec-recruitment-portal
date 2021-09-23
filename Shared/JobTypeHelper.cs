@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
     public class JobTypeHelper
     {
-        public int JobTypeHelperID { get; set; }
+        public int Id { get; set; }
         public int JobID { get; set; }
 
         public Job Job { get; set; }

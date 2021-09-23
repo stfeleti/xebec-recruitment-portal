@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
     public class Education
     {
-        public int EducationId { get; set; }
+        public int Id { get; set; }
 
         public string Insitution { get; set; }
 

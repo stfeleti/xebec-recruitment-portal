@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
      public class Status
     {
-        public int StatusId { get; set; }
+        public int Id { get; set; }
         public string Description { get; set; }
     }
 }

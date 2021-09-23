@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
     public class ApplicationPhaseHelper
     {
-        public int ApplicationPhaseHelperId { get; set; }
+        public int Id { get; set; }
         public int ApplicationId { get; set; }
         public Application Application { get; set; }
         public int PhaseId { get; set; }

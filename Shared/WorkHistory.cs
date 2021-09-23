@@ -8,7 +8,7 @@ namespace XebecPortal.Shared
 {
   public  class WorkHistory
     {
-        public int WorkHistoryId { get; set; }
+        public int Id { get; set; }
 
         public string CompanyName { get; set; }
 

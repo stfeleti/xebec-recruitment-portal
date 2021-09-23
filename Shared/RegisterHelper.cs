@@ -9,7 +9,7 @@ namespace XebecPortal.Shared
 {
      public class RegisterHelper
     {
-        public int RegisterHelperId { get; set; }
+        public int Id { get; set; }
         public int TimeDateOfRegistration { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
