@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-R\/Ir2q3gYiEgT5NG+iX1IB1nFDj2QFv7RWzSZeb6uDg=",
+      "hash": "sha256-+dQxqSxwvSqBZjt1thGT5AByS0etyDU+3pnL6iJCGdE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/XebecPortal.Shared.pdb"
     },
     {
-      "hash": "sha256-QmK3H+6mdmGwQ+TgIKQMktcvmDz4JB5G3ySOdhYKC0g=",
+      "hash": "sha256-GkRe6\/6pySpqJ8UaMk1qy8SGYzXFnv9bHfOM8\/7OMdQ=",
       "url": "_framework\/XebecPortal.Client.dll"
     },
     {
-      "hash": "sha256-b15+8plNkxU7rffxxk3H3Ml3M2LGN1lv8T\/UftVEqaM=",
+      "hash": "sha256-++oJpJcGb4IuQsiiOSBcnc8UWZOeS3GmWaHDdrkSzxc=",
       "url": "_framework\/XebecPortal.Client.pdb"
     },
     {
@@ -1589,7 +1589,7 @@
       "url": "_framework\/XebecPortal.Shared.dll.gz"
     },
     {
-      "hash": "sha256-cj6YkO5H80sMTPANmlcY+fTshg0yFWZradLEaOoge7s=",
+      "hash": "sha256-BcNDPnuVU\/3pHLOwJnJkUhIw6og40mXvR\/SQ34EFGAo=",
       "url": "css\/app.css"
     },
     {
@@ -1653,13 +1653,13 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-lkyW40gsr4NAkG6f2rZyyoHLO3BducupTE\/FkUtQONk=",
+      "hash": "sha256-B1R4ZKSE2wNJuHAMJFmspVytarbv0pXrY0W2yz7IK5U=",
       "url": "XebecPortal.Client.styles.css"
     },
     {
-      "hash": "sha256-f\/oZPcEP83mVtcEj6cdRm\/RPrwoKjNAaLj1L0Ia7AAw=",
+      "hash": "sha256-f+URW0F3i+4fI3NUbZnTbz8vZ0Lo3aNX8WUhb7q0Id8=",
       "url": "XebecPortal.Client.bundle.scp.css"
     }
   ],
-  "version": "J0Oa3Zv0"
+  "version": "jvrKwZli"
 };
