@@ -3927,39 +3927,6 @@
         }
       },
       {
-        "HashCode": 120947360,
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.App",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.App"
-        }
-      },
-      {
-        "HashCode": 1613078635,
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.App",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "XebecPortal.Client.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1745700541,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.Pages.Counter",
