@@ -8,6 +8,8 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using Server.Data;
 using Microsoft.EntityFrameworkCore;
+using Server.IRepository;
+using Server.Repository;
 
 namespace XebecPortal.Server
 {
@@ -31,6 +33,7 @@ namespace XebecPortal.Server
 
             });
 
+           
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

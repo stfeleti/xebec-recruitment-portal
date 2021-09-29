@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Server.Configurations.Entities;
-using Shared;
 using XebecPortal.Shared;
 
 namespace Server.Data
