@@ -83,6 +83,13 @@ using XebecPortal.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\_Imports.razor"
+using XebecPortal.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
 using XebecPortal.Client.JobPortalTestEnv.Models;
 

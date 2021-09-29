@@ -82,6 +82,13 @@ using XebecPortal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\_Imports.razor"
+using XebecPortal.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/sample")]
     public partial class Sample : Microsoft.AspNetCore.Components.ComponentBase
     {
