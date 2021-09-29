@@ -1,0 +1,247 @@
+﻿@page "/jobpostingstest"
+
+<style>
+    .flexbox-container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-div {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        max-height: 600px;
+        max-width: 800px;
+        background-color: white;
+        border: 1px solid;
+        box-shadow: 5px 5px 5px 5px #888888;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* .post-summaries-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+        max-height: 600px; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-top: 35px;
+        overflow-y: scroll ; 
+    }*/
+
+    .post-summaries-container {
+        
+        height: 90% ; 
+        max-height : 500px; 
+        margin: auto ; 
+        width: 60% ; 
+        overflow-y : scroll ; 
+    }
+       
+    
+    .post-summaries {
+        width: 80% ; 
+        margin: 1rem;
+        height: 150px;
+        border: 2px solid #0048CB;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center
+    }
+
+
+    .search-input {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+        .search-input input {
+            width: 60%;
+            margin: auto;
+            border: 2px solid #0048CB; 
+        }
+
+    .post-details {
+        display: flex; 
+        width: 80%;
+        height: 60%;
+        max-width: 400px ; 
+        border: 2px solid #0048CB;
+        margin: auto;
+    }
+
+      .button {
+        display: flex;
+        width: 80%;
+        height: 50px;
+        max-width: 200px; 
+        justify-content: center;
+        align-items: center;
+        margin: auto; 
+    }
+
+    .button-add {
+        color: black;
+        border: 1px solid #0048CB;
+    }
+
+        .button-add:hover {
+            background-color: #0048CB;
+            color: white;
+        }
+
+    h2 {
+        display: flex ; 
+        justify-content: center; 
+        align-items: center; 
+        font-weight: bold; 
+        margin: auto; 
+    }
+
+    .details-container{ 
+          display: flex; 
+          width: 100% ; 
+          height: 90%; 
+          flex-direction: column ; 
+          justify-content: flex-end ; 
+          align-items: flex-end; 
+         }
+
+</style>
+
+
+
+<!--Entire page as a flexbox-->
+<div class="flexbox-container">
+
+
+
+
+    <!--Center flexbox containing the functionality-->
+    <div class="center-div">
+        <h2>Job Postings</h2>
+        <!--Search Bar-->
+        <div class="search-input">
+
+            <input type="search" name="searchjob" placeholder="Search job by name" />
+
+        </div>
+
+        <!--Job summary boxes inside a container-->
+
+        <div class="wrapper">
+            <div class="post-summaries-container">
+
+                @if (jobs != null)
+                {
+                    @foreach (var JobTest in jobs)
+                    {
+                        <div class="post-summaries" onclick="clickdetails()" style="cursor: pointer;">
+                            <p>Title: @JobTest.Title</p>
+                            <p>Location: @JobTest.Location</p>
+                            <p>Compensation: @JobTest.Compensation</p>
+
+                        </div>
+                    }
+                }
+
+
+                <!--Individual job summary boxes
+    <div class="post-summaries post-summary-1"> </div>
+    <div class="post-summaries post-summary-2"> </div>
+    <div class="post-summaries post-summary-3"> </div>
+    <div class="post-summaries post-summary-4"> </div>
+    <div class="post-summaries post-summary-5"> </div>
+       -->
+            </div>
+            
+    <!--Post details box-->
+            <div class="details-container">
+                <div class="post-details">
+                    <p class="job-details"></p>
+
+                </div>
+
+                <button class="button button-add">Add</button>
+            </div>
+       
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+@code {
+
+    List<JobTest> jobs = new List<JobTest>
+    {
+
+            new JobTest
+            {
+                Id = 1,
+                Title = "Manager",
+                Description = "blah blah blah blah blah",
+                Location = "Durban",
+                Compensation = "R15000"
+
+
+
+            },
+
+
+             new JobTest
+            {
+                Id = 2,
+                Title = "Intern",
+                Description = "blah blah blah blah blah",
+                Location = "Cape Town",
+                Compensation = "R10000"
+
+
+
+            },
+
+                new JobTest
+            {
+                Id = 3,
+                Title = "Director",
+                Description = "blah blah blah blah blah",
+                Location = "Sandton",
+                Compensation = "R40000",
+
+
+
+            },
+
+
+
+
+
+    };
+
+
+}
