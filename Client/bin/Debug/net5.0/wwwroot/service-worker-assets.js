@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-+dQxqSxwvSqBZjt1thGT5AByS0etyDU+3pnL6iJCGdE=",
+      "hash": "sha256-DkQU6a6yJKC76VAMzvF1qPIZisKSIGDW+r6JYRlIHUY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -785,19 +785,19 @@
       "url": "_framework\/dotnet.5.0.10.js"
     },
     {
-      "hash": "sha256-LC3kp1bDOm9WThDHjQ536Y\/k7UOMw7nDIp554qu2eJo=",
+      "hash": "sha256-4\/rrR00qxdP8snLvA+nPvuegS3hP+S8gBDjLB30XB5Q=",
       "url": "_framework\/XebecPortal.Shared.dll"
     },
     {
-      "hash": "sha256-1rneR87VgTiYN4AdaQQ+IMZmyom2IrzEqmajNlsBfls=",
+      "hash": "sha256-a4ODs7WP5KEO5Po5F1XmhHllKDx8Z1Lule74bJoCGYk=",
       "url": "_framework\/XebecPortal.Shared.pdb"
     },
     {
-      "hash": "sha256-GkRe6\/6pySpqJ8UaMk1qy8SGYzXFnv9bHfOM8\/7OMdQ=",
+      "hash": "sha256-W2wu+Narl1+iq6bMNA3vOwWUihiy0s\/uD8SjvvOYwvg=",
       "url": "_framework\/XebecPortal.Client.dll"
     },
     {
-      "hash": "sha256-++oJpJcGb4IuQsiiOSBcnc8UWZOeS3GmWaHDdrkSzxc=",
+      "hash": "sha256-95XusxjKJ6\/oSSzg6vPHE\/zIMbRjqZ3u4Hc3R6RiN+k=",
       "url": "_framework\/XebecPortal.Client.pdb"
     },
     {
@@ -1585,7 +1585,7 @@
       "url": "_framework\/dotnet.5.0.10.js.gz"
     },
     {
-      "hash": "sha256-lp2wBgGBMeM+TgmC1g1aJ\/Rl2B0TKThtaUCg3Uoujdk=",
+      "hash": "sha256-o9XSPY\/VMSgFCJT88tAcxPwdmbvbkHhWcjyQODzOaXc=",
       "url": "_framework\/XebecPortal.Shared.dll.gz"
     },
     {
@@ -1645,21 +1645,25 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-wkS28O5QfQJFZ+F+IboIKvRi1RxwJ\/opf14wIbNuUIg=",
+      "hash": "sha256-O2K0gzfVvTPrgWIeegghbN9Wvxp3S1Swp0WAoyws1F8=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-l3NkJApmXoendt5mp9f4h0yRx8cwtW\/I12ARmFPLXCA=",
+      "url": "js\/test.js"
     },
     {
       "hash": "sha256-ESJvwu+X5lHOOroyyQaa6VuaX8xsmDyA3igM3eP3Y2k=",
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-B1R4ZKSE2wNJuHAMJFmspVytarbv0pXrY0W2yz7IK5U=",
+      "hash": "sha256-2I+96ZX\/g9ADQKKwiPThY2OA166a1C6OQ5MfKKrwBXs=",
       "url": "XebecPortal.Client.styles.css"
     },
     {
-      "hash": "sha256-f+URW0F3i+4fI3NUbZnTbz8vZ0Lo3aNX8WUhb7q0Id8=",
+      "hash": "sha256-4fPoh2dSmjc+c5F1wWeuEhNOaRjuW4SKJNt\/iM+6zMA=",
       "url": "XebecPortal.Client.bundle.scp.css"
     }
   ],
-  "version": "jvrKwZli"
+  "version": "52oU3yFD"
 };
