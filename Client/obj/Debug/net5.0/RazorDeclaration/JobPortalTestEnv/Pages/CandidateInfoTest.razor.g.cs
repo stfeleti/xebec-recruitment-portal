@@ -105,7 +105,7 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 171 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
+#line 173 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
  
 
     private List<CandidateTest> Candidates = new List<CandidateTest>
