@@ -8,6 +8,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -538803712,
+        "Kind": "Components.Component",
+        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+        "AssemblyName": "XebecPortal.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CandidateInfoTest"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
+        }
+      },
+      {
+        "HashCode": 1856699461,
+        "Kind": "Components.Component",
+        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+        "AssemblyName": "XebecPortal.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1467477222,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.AddJobPostTest",
@@ -74,35 +107,35 @@
         }
       },
       {
-        "HashCode": -538803712,
+        "HashCode": -409873098,
         "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
         "AssemblyName": "XebecPortal.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CandidateInfoTest"
+            "TagName": "JobPostingsTest"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
+          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest"
         }
       },
       {
-        "HashCode": 1856699461,
+        "HashCode": 2013389960,
         "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
         "AssemblyName": "XebecPortal.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
+            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
+          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13117,6 +13150,11 @@
     {
       "FilePath": "c:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Client\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Client\\JobPortalTestEnv\\Pages\\JobPostingsTest.razor",
+      "TargetPath": "JobPortalTestEnv\\Pages\\JobPostingsTest.razor",
       "FileKind": "component"
     },
     {
