@@ -10,14 +10,15 @@ C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPo
 C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.dll
 C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\ref\XebecPortal.Shared.dll
 C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Shared\obj\Debug\net5.0\XebecPortal.Shared.pdb
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.deps.json
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.dll
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\ref\XebecPortal.Shared.dll
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.pdb
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfoInputs.cache
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfo.cs
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.csproj.CoreCompileInputs.cache
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.dll
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\ref\XebecPortal.Shared.dll
-C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.pdb
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.deps.json
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.dll
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\ref\XebecPortal.Shared.dll
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\bin\Debug\net5.0\XebecPortal.Shared.pdb
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.csproj.AssemblyReference.cache
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfoInputs.cache
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.AssemblyInfo.cs
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.dll
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\ref\XebecPortal.Shared.dll
+C:\Users\Kian\source\repos\xebec-recruitment-portal\Shared\obj\Debug\net5.0\XebecPortal.Shared.pdb

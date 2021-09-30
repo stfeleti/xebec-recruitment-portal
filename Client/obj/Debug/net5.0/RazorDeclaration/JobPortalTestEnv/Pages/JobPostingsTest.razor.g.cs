@@ -98,11 +98,11 @@ using XebecPortal.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 198 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
+#line 224 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
        
 
     List<JobTest> jobs = new List<JobTest>
-    {
+{
 
             new JobTest
             {
@@ -144,14 +144,34 @@ using XebecPortal.Shared;
 
 
 
-
     };
+
+    bool IsClicked = false;
+    private int ReturnedJobId = 0;
+    private JobTest CurrentJob = null;
+
+    private async Task On()
+    {
+        IsClicked = true;
+        ReturnedJobId = Int32.Parse(await jsr.InvokeAsync<string>("show_"));
+        CurrentJob = jobs.FirstOrDefault(q => q.Id == ReturnedJobId);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await jsr.InvokeVoidAsync("initialize_");
+        }
+    }
+
 
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsr { get; set; }
     }
 }
 #pragma warning restore 1591
