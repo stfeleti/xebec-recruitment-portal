@@ -8,75 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -538803712,
-<<<<<<< HEAD
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CandidateInfoTest"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
-        }
-      },
-      {
-        "HashCode": 1856699461,
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1467477222,
-=======
->>>>>>> uidesign
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CandidateInfoTest"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
-        }
-      },
-      {
-        "HashCode": 1856699461,
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-        "AssemblyName": "XebecPortal.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.CandidateInfoTest",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1467477222,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.AddJobPostTest",
@@ -110,29 +41,18 @@
         }
       },
       {
-<<<<<<< HEAD
         "HashCode": -409873098,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
-=======
-        "HashCode": -788993019,
-        "Kind": "Components.Component",
-        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample",
->>>>>>> uidesign
         "AssemblyName": "XebecPortal.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-<<<<<<< HEAD
             "TagName": "JobPostingsTest"
-=======
-            "TagName": "Sample"
->>>>>>> uidesign
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-<<<<<<< HEAD
           "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest"
         }
       },
@@ -140,7 +60,32 @@
         "HashCode": 2013389960,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
-=======
+        "AssemblyName": "XebecPortal.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -788993019,
+        "Kind": "Components.Component",
+        "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample",
+        "AssemblyName": "XebecPortal.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Sample"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample"
         }
       },
@@ -148,25 +93,16 @@
         "HashCode": 1725765792,
         "Kind": "Components.Component",
         "Name": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample",
->>>>>>> uidesign
         "AssemblyName": "XebecPortal.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-<<<<<<< HEAD
-            "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest"
-=======
             "TagName": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample"
->>>>>>> uidesign
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-<<<<<<< HEAD
-          "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.JobPostingsTest",
-=======
           "Common.TypeName": "XebecPortal.Client.JobPortalTestEnv.Pages.Sample",
->>>>>>> uidesign
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

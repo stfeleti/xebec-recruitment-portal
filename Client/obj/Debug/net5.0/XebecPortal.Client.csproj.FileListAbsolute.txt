@@ -1288,3 +1288,5 @@ C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\obj\Debug\net5.0\ref\
 C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\obj\Debug\net5.0\XebecPortal.Client.pdb
 C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\obj\Debug\net5.0\service-worker-assets.js
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\obj\Debug\net5.0\RazorDeclaration\JobPortalTestEnv\Pages\JobPostingsTest.razor.g.cs
+C:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\obj\Debug\net5.0\Razor\JobPortalTestEnv\Pages\JobPostingsTest.razor.g.cs
