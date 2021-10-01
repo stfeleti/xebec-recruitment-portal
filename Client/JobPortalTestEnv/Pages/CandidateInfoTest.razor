@@ -16,7 +16,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #F0FFFF;
+        background-color: #d8e2dc;
     }
 
     .add-job-container {
@@ -30,7 +30,7 @@
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         background-color: #fff;
         border-radius: 5px;
     }
@@ -102,6 +102,23 @@
         justify-content: flex-end;
         align-items: center;
     }
+
+
+    ul span
+    {
+        font-weight: bold;
+    }
+ 
+    li
+    {
+        list-style: none;
+    }
+
+    .select-details p span
+    {
+        font-weight: bold;
+    }
+
 </style>
 
 
@@ -111,51 +128,54 @@
 
     <div class="add-job-container">
 
-        <input type="text" class="form-control w-75 mt-2 mb-3" placeholder="search">
+        <input type="text" class="form-control w-75 mt-2 mb-3" placeholder="search" @bind-value="searchTerm">
 
         <div class="inner-wrapper">
 
             <div class="left">
 
-                @if(Candidates != null)
+                @if(SearchResults != null && SearchResults.Count > 0)
                 {
-                    @foreach (var candidate in Candidates)
+                     @foreach (var candidate in SearchResults)
                     {
                         <div class="box" @onclick="On" id=@($"{(candidate.Id)}")>
                    
                             <ul>
-
-                                <li id="child">@candidate.Id</li>   
-                                <li>@candidate.Name</li> 
-                                <li>@candidate.YearsOfExp</li>  
+                              <span>ID: </span> <li id="child">@candidate.Id</li> 
+                              <span>Name: </span> <li>@candidate.Name</li>
+                              <span>Job Applied For: </span> <li>@candidate.JobAppliedFor</li>
 
                             </ul>
 
                         </div>
 
                     }
-                }                    
+                }
                
+                         
 
             </div>
 
             <div class="right">
                 <div class="select-details">
                     
+                    
                     @if(IsClicked && CurrentCandidate != null)
                     {
                     
                   
-                     <p>@CurrentCandidate.Id</p>
-                        <p>@CurrentCandidate.Name</p>
-                        <p>@CurrentCandidate.YearsOfExp</p>
-                        <p>@CurrentCandidate.ExtraInfo</p>
+                       
+                        <p><span>ID: </span>@CurrentCandidate.Id</p>
+                        <p><span>Name: </span>@CurrentCandidate.Name</p>
+                        <p><span>Job Applied For: </span>@CurrentCandidate.JobAppliedFor</p>
+                        <p><span>Years of Exp: </span>@CurrentCandidate.YearsOfExp</p>                        
+                        <p><span>Additional Info: </span>@CurrentCandidate.ExtraInfo</p>
                     }
 
 
                 </div>
                 <div class="btn-container">
-                    <button class="btn btn-outline-info btn-sm">Add</button>
+                    <button class="btn btn-outline-info btn-sm" @onclick="Search">Search</button>
 
                 </div>
             </div>
@@ -171,8 +191,8 @@
 
 @code
 {
-
-    private List<CandidateTest> Candidates = new List<CandidateTest>
+    static string searchTerm = string.Empty;
+    private static List<CandidateTest> Candidates = new List<CandidateTest>
     {
 
 
@@ -180,6 +200,7 @@
         {
             Id = 1,
             Name = "Johnathan Snow",
+            JobAppliedFor = "Developer",
             YearsOfExp = 2,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -189,6 +210,7 @@
         {
             Id = 2,
             Name = "Edward Stark",
+            JobAppliedFor = "Lawyer",
             YearsOfExp = 8,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -198,6 +220,7 @@
         {
             Id = 3,
             Name = "Peter Parker",
+            JobAppliedFor = "Developer",
             YearsOfExp = 1,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -207,6 +230,7 @@
         {
             Id = 4,
             Name = "Bruce Banner",
+            JobAppliedFor = "Cloud Engineer",
             YearsOfExp = 5,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -214,7 +238,15 @@
 
     };
 
-   
+    private static List<CandidateTest> SearchResults = Candidates;
+    private static bool isFound = false;    
+
+    private static void Search()
+    {
+        SearchResults = Candidates.FindAll(q => q.JobAppliedFor.ToLower().Equals(searchTerm.ToLower())); 
+       
+    }    
+
     bool IsClicked = false;
     private int ReturnedCandidateId = 0;
     private CandidateTest CurrentCandidate = null;
@@ -222,7 +254,13 @@
     {
         IsClicked = true;
         ReturnedCandidateId = Int32.Parse(await jsr.InvokeAsync<string>("show"));
-        CurrentCandidate = Candidates.FirstOrDefault(q => q.Id == ReturnedCandidateId);    
+       
+       
+        CurrentCandidate = SearchResults.FirstOrDefault(q => q.Id == ReturnedCandidateId); 
+    
+           
+            
+
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

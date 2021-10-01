@@ -1,219 +1,186 @@
-﻿@page "/jobpostingstest"
+﻿@page "/jobpostings"
 @inject IJSRuntime jsr
+@using XebecPortal.Client.JobPortalTestEnv.Models
 
 <style>
-
     @@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
     * {
         font-family: 'Montserrat', sans-serif;
     }
 
-    .flexbox-container {
+    .wrapper-job {
+        width: 100%;
         height: 100vh;
-        width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
+        background-color: #d8e2dc;
     }
 
-    .center-div {
-        display: flex;
-        width: 80%;
-        height: 80%;
+    .add-job-container {
+        padding: 20px;
+        width: 90%;
+        max-width: 650px;
         margin: auto;
-        max-height: 600px;
-        max-width: 800px;
-        background-color: white;
-        border: 1px solid;
-        box-shadow: 5px 5px 5px 5px #888888;
-        flex-direction: column;
-    }
-
-    .wrapper {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* .post-summaries-container {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 90%;
-        max-height: 600px;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 10px;
-        margin-top: 35px;
-        overflow-y: scroll ;
-    }*/
-
-    .post-summaries-container {
         height: 90%;
         max-height: 500px;
-        margin: auto;
-        width: 60%;
-        overflow-y: scroll;
-    }
-
-
-    .post-summaries {
-        width: 80%;
-        margin: 1rem;
-        height: 150px;
-        border: 2px solid #0048CB;
-        padding: 20px;
-        overflow-y: scroll;
-        cursor: pointer ; 
-    }
-
-    h2 {
-        text-align: center
-    }
-
-
-    .search-input {
-        width: 100%;
-        height: 10%;
         display: flex;
+        justify-content: space-evenly;
         align-items: center;
-        justify-content: center;
-        margin: auto;
+        flex-direction: column;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        background-color: #fff;
+        border-radius: 5px;
     }
 
-        .search-input input {
-            width: 60%;
-            margin: auto;
-            border: 2px solid #0048CB;
-        }
-
-    .post-details {
-        display: flex;
-        width: 80%;
-        height: 60%;
-        max-width: 400px;
-        border: 2px solid #0048CB;
-        margin: auto;
-    }
-
-    .button {
-        display: flex;
-        width: 80%;
-        height: 50px;
-        max-width: 200px;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-
-    .button-add {
-        color: black;
-        border: 1px solid #0048CB;
-    }
-
-        .button-add:hover {
-            background-color: #0048CB;
-            color: white;
-        }
-
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        margin: auto;
-    }
-
-    .details-container {
-        display: flex;
+    .inner-wrapper {
         width: 100%;
         height: 90%;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        margin: auto;
+        display: flex;
     }
 
-    .text-container { 
-        padding: 20px; 
-        display: flex; 
-        width: 100% ; 
-        height: 100% ; 
-        flex-direction: column ; 
-        justify-content: flex-start ; 
-        align-items: flex-start ; 
+    .left {
+        width: 45%;
+        height: inherit;
+        padding: 5px;
+        overflow-y: scroll;
     }
+
+    .left::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .left::-webkit-scrollbar-track {
+        background-color: #EAF2F8;
+    }
+
+    .left::-webkit-scrollbar-thumb {
+        background-color: #95A5A6;
+        border-radius: 20px;
+        border: 3px solid #EAF2F8;
+    }
+
+    .box {
+        width: 90%;
+        height: fit-content;
+        padding: 10px;
+        margin: 5px auto;
+        cursor: pointer;
+    }
+
+    .right {
+        width: 55%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .select-details {
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .box,
+    .select-details {
+        border: 1px solid #95A5A6;
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .btn-container {
+        width: 90%;
+        height: 25%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    ul span
+    {
+        font-weight: bold;
+    }
+ 
+    li
+    {
+        list-style: none;
+    }
+
+    .select-details p span
+    {
+        font-weight: bold;
+    }
+
 </style>
 
 
+<div class="wrapper-job">
 
-<!--Entire page as a flexbox-->
-<div class="flexbox-container">
+    <h1 class="mt-5" style="margin-bottom: -5px;">Job Postings</h1>
 
+    <div class="add-job-container">
 
+        <input type="text" class="form-control w-75 mt-2 mb-3" placeholder="search" @bind-value="searchTerm">
 
+        <div class="inner-wrapper">
 
-    <!--Center flexbox containing the functionality-->
-    <div class="center-div">
-        <h2>Job Postings</h2>
-        <!--Search Bar-->
-        <div class="search-input">
+            <div class="left">
 
-            <input type="search" name="searchjob" placeholder="Search job by name" />
-
-        </div>
-
-        <!--Job summary boxes inside a container-->
-
-        <div class="wrapper">
-            <div class="post-summaries-container">
-
-                @if (jobs != null)
+                @if(SearchResults != null && SearchResults.Count > 0)
                 {
-                    @foreach (var JobTest in jobs)
+                     @foreach (var job in SearchResults)
                     {
-                        <div class="post-summaries" @onclick="On" id=@($"{(JobTest.Id)}")>
-                            <p id="child">@JobTest.Id</p>
-                            <p>Title: @JobTest.Title</p>
-                            <p>Location: @JobTest.Location</p>
-                            <p>Compensation: @JobTest.Compensation</p>
+                        <div class="box" @onclick="On" id=@($"{(job.Id)}")>
+                   
+                            <ul>
+                              <span>ID: </span> <li id="child">@job.Id</li> <br>
+                              <span>Title: </span> <li>@job.Title</li> <br>  
+                              <span>Location: </span> <li>@job.Location</li>
+
+                            </ul>
 
                         </div>
+
                     }
                 }
+               
+                         
+
             </div>
 
-
-            <!--Post details box-->
-            <div class="details-container">
-
-                <div class="post-details">
-                    @if (IsClicked && CurrentJob != null)
+            <div class="right">
+                <div class="select-details">
+                    
+                    
+                    @if(IsClicked && CurrentJob != null)
                     {
                     
-                        <div class="text-container">
-                        <p> @CurrentJob.Id</p> 
-                        <p>Title: @CurrentJob.Title</p> 
-
-                       <p>Location: @CurrentJob.Location</p> 
-                       <p>Compensation: @CurrentJob.Compensation</p> 
-                       <p>@CurrentJob.Description</p> 
-
-                            </div>
-                    
-                      }
+                  
+                       
+                        <p><span>ID: </span>@CurrentJob.Id</p>
+                        <p><span>Title: </span>@CurrentJob.Title</p>
+                        <p><span>Location: </span>@CurrentJob.Location</p>
+                        <p><span>Compensation: </span>@CurrentJob.Compensation</p>                        
+                        <p><span>Description: </span>@CurrentJob.Description</p>
+                    }
 
 
                 </div>
-
-                <button class="button button-add">Add</button>
+                <div class="btn-container">
+                    <button class="btn btn-outline-info btn-sm mr-1" @onclick="Search">Search</button>
+                    <a href="/addjobpost" class="btn btn-outline-success btn-sm ml-1">Post Job</a>
+                </div>
             </div>
 
         </div>
-
-
 
 
 
@@ -221,9 +188,11 @@
 
 </div>
 
-@code {
 
-    List<JobTest> jobs = new List<JobTest>
+@code
+{
+    static string searchTerm = string.Empty;
+static List<JobTest> Jobs = new List<JobTest>
 {
 
             new JobTest
@@ -246,9 +215,6 @@
                 Description = "blah blah blah blah blah",
                 Location = "Cape Town",
                 Compensation = "R10000"
-
-
-
             },
 
                 new JobTest
@@ -259,34 +225,56 @@
                 Location = "Sandton",
                 Compensation = "R40000",
 
-
-
+            },
+              new JobTest
+            {
+                Id = 4,
+                Title = "Intern",
+                Description = "blah blah blah blah blah",
+                Location = "Durban",
+                Compensation = "R50000"
+            },
+              new JobTest
+            {
+                Id = 5,
+                Title = "Manager",
+                Description = "blah blah blah blah blah",
+                Location = "Cape Town",
+                Compensation = "R100000"
             },
 
-
-
-
     };
+
+
+    private static List<JobTest> SearchResults = Jobs;
+    private static bool isFound = false;    
+
+    private static void Search()
+    {
+        SearchResults = Jobs.FindAll(q => q.Title.ToLower().Equals(searchTerm.ToLower())); 
+        if(SearchResults == null || SearchResults.Count <= 0)
+            SearchResults = Jobs;
+       
+    }    
 
     bool IsClicked = false;
     private int ReturnedJobId = 0;
     private JobTest CurrentJob = null;
-
     private async Task On()
     {
         IsClicked = true;
-        ReturnedJobId = Int32.Parse(await jsr.InvokeAsync<string>("show_"));
-        CurrentJob = jobs.FirstOrDefault(q => q.Id == ReturnedJobId);
+        ReturnedJobId = Int32.Parse(await jsr.InvokeAsync<string>("show"));       
+       
+        CurrentJob = SearchResults.FirstOrDefault(q => q.Id == ReturnedJobId); 
+    
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
+        if(firstRender)
         {
-            await jsr.InvokeVoidAsync("initialize_");
+            await jsr.InvokeVoidAsync("initialize");
         }
     }
-
-
 
 }

@@ -89,6 +89,13 @@ using XebecPortal.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/addjobpost")]
     public partial class AddJobPostTest : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -97,6 +104,51 @@ using XebecPortal.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 157 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
+ 
+    JobSampleTest job = new JobSampleTest();
+
+    [Parameter]
+    public EventCallback<string> ValueChanged
+    {
+        get;
+        set;
+    }
+    private Task OnJobTypeChanged(ChangeEventArgs e)
+    {
+        job.JobType = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.JobType);
+    }
+
+    private Task OnDepartmentChanged(ChangeEventArgs e)
+    {
+        job.Department = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.Department);
+    }
+
+
+    private async Task OnValid()
+    {
+        //https://localhost:3001/api/job
+        if(job != null)
+        {
+            var msg = await HttpClient.PostAsJsonAsync("https://localhost:3001/api/job", job);
+            if(msg.IsSuccessStatusCode)
+            {
+                 NavigationManager.NavigateTo("/successtest");   
+            }
+        }
+        
+    }
+
+  
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient HttpClient { get; set; }
     }
 }
 #pragma warning restore 1591

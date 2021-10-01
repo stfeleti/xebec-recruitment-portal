@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\XebecPortal.Server.csproj": {}
+    "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\XebecPortal.Server.csproj": {}
   },
   "projects": {
     "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Client\\XebecPortal.Client.csproj": {
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\XebecPortal.Server.csproj": {
+    "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\XebecPortal.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\XebecPortal.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\XebecPortal.Server.csproj",
         "projectName": "XebecPortal.Server",
-        "projectPath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\XebecPortal.Server.csproj",
+        "projectPath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\XebecPortal.Server.csproj",
         "packagesPath": "C:\\Users\\Ashton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\obj\\",
+        "outputPath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

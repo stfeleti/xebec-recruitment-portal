@@ -1,9 +1,14 @@
 @page "/addjobpost"
+@using Models
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
 
 <style>
+
     @@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
-    * {
+    *
+    {
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -11,10 +16,10 @@
         width: 100%;
         height: 100vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F0FFFF;
+        flex-direction: column;        
+       justify-content: center;
+       align-items: center;
+       background-color: #d8e2dc;
     }
 
     .add-job-container {
@@ -23,67 +28,52 @@
         max-width: 600px;
         margin: auto;
         height: 90%;
-        max-height: 450px;
+        max-height: 500px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         background-color: #fff;
         border-radius: 5px;
     }
 
-    .inner
-    {
+    .details {
+        padding:10px;
         width: 100%;
-        height: inherit;
+        height: 85%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
+        
     }
 
-    .right
-    {
-        width: 68%;
-    }
 
-    .right .input
-    {
-        width: 90%;
-        margin: 5px auto;
-    }
-
-    .left
-    {
-        width: 35%;
-    }
-
-    .checkboxes
-    {
-        display: flex;
-        flex-direction: column;        
-    }
-
-    .checkboxes span
-    {
-        margin: 6px 0;    
-    }
-
-    .right, .left
-    {
-        height: inherit;
+    .details .textarea{
+        width: 45%;
+        height: 150px;
         margin: auto;
-        display: flex;
+    }    
+
+    .right {
+        display: flex;     
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 50%;
+        margin: auto;
     }
 
-    .btns
-    {
-        margin-top: 3rem;
+    .right-input{
+        margin: 5px 0;
     }
 
+    .btns-wrapper {
+        width: 90%;
+        height: 10%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
 
@@ -91,65 +81,114 @@
 
     <h1 class="mt-5">Add Job Post</h1>
 
-    <div class="add-job-container">
+    <EditForm Model="job" OnValidSubmit="OnValid" class="add-job-container">
+       
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+            
+            <input type="text" class="form-control w-50 mt-3" placeholder="Job Title" @bind-value="job.JobTitle">
+
+   
+        <div class="details">
 
 
-        <div class="inner">
+
+                 <InputTextArea class="form-control input textarea" @bind-Value="job.Description"/>
+
 
 
             <div class="right">
 
-                <input type="text" class="form-control input" placeholder="Job Title">
 
-                <input type="text" class="form-control right-input input" placeholder="Location">
+                    <input type="text" class="form-control right-input" placeholder="Location" @bind-value="job.Location">
 
-                <select class="custom-select right-input input">
-                    <option selected>-- Select Job Type --</option>
-                    <option value="1">Full-time</option>
-                    <option value="2">Part-time</option>
-                    <option value="3">Contract</option>
-                </select>
+                    <select class="custom-select right-input" id="inputGroupSelect01" @onchange="OnJobTypeChanged">
+                        <option selected>-- Select Job Type --</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+               
+                    <select class="custom-select right-input" id="inputGroupSelect01" @onchange="OnDepartmentChanged">
+                        <option selected>-- Select Department --</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Legal">Legal</option>
+                        <option value="I.T">I.T</option>
+                    </select>
 
-                <select class="custom-select right-input input">
-                    <option selected>-- Select Department --</option>
-                    <option value="1">Accounting</option>
-                    <option value="2">Legal</option>
-                    <option value="3">I.T</option>
-                </select>
 
-
-                <input type="text" class="form-control right-input input" placeholder="Compensation">
-
-                <textarea class="form-control input"></textarea>
+                    <input type="text" class="form-control right-input" placeholder="Compensation" @bind-value="job.Compensation">
 
             </div>
-
-
-            <div class="left">
-
-                <div class="checkboxes">
-
-                    <span><input type="checkbox"> LinkedIn</span>
-                    <span><input type="checkbox"> Indeed</span>
-                    <span><input type="checkbox"> PNet</span>
-
-
-                </div>
-
-                <div class="btns">
-                    <button class="btn btn-outline-success btn-sm">Add Job Post</button>
-                    <button class="btn btn-outline-danger btn-sm">Cancel</button>
-                </div>
-
-            </div>
-
 
         </div>
 
-        
+        <div class="btns-wrapper">
 
+            <div class="checkboxes">
 
+                <input type="checkbox"> LinkedIn &nbsp;
+                <input type="checkbox"> Indeed &nbsp;
+                <input type="checkbox"> PNet &nbsp;
+                
 
-    </div>
+            </div>
+
+            <div class="btns">
+                <button class="btn btn-success btn-sm">Add Job Post</button>
+                @* <button class="btn btn-danger btn-sm">Cancel</button> *@
+            </div>
+
+        </div>
+
+    </EditForm>
 
 </div>
+
+<p>@job.JobTitle</p>
+<p>@job.Compensation</p>
+<p>@job.Department</p>
+<p>@job.Description</p>
+<p>@job.JobType</p>
+<p>@job.Location</p>
+
+
+@code
+{
+    JobSampleTest job = new JobSampleTest();
+
+    [Parameter]
+    public EventCallback<string> ValueChanged
+    {
+        get;
+        set;
+    }
+    private Task OnJobTypeChanged(ChangeEventArgs e)
+    {
+        job.JobType = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.JobType);
+    }
+
+    private Task OnDepartmentChanged(ChangeEventArgs e)
+    {
+        job.Department = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.Department);
+    }
+
+
+    private async Task OnValid()
+    {
+        //https://localhost:3001/api/job
+        if(job != null)
+        {
+            var msg = await HttpClient.PostAsJsonAsync("https://localhost:3001/api/job", job);
+            if(msg.IsSuccessStatusCode)
+            {
+                 NavigationManager.NavigateTo("/successtest");   
+            }
+        }
+        
+    }
+
+  
+}
