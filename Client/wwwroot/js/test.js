@@ -11,7 +11,7 @@ function initialize()
     divs = []
     for(var i = 0; i < container.length; i++)
     {
-        console.log(i)
+        console.log(container[i])
         divs.push(container[i])
 
     }
@@ -23,11 +23,13 @@ function initialize()
         });
     });
 
+
 }
 
 
 function show()
 {
+    console.log(id)
    return id;
    
 }

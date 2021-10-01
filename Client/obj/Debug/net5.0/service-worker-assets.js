@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-jSC19LqoDY4I4vmyPwBRVi51ANeDGDRtujtjL5eC+uE=",
+      "hash": "sha256-0PzcAkRMClsAGJ\/IO6JFGu0EDN38IMwhClGdy6mzo5Q=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/XebecPortal.Shared.pdb"
     },
     {
-      "hash": "sha256-a0ODS+15mGLIShmhN9U2obp8YwHjUH+YczBoNKVpyAs=",
+      "hash": "sha256-UncPZ52\/EBQThq7vPRp02NDNpwaWnla6TmdVpuy5aMw=",
       "url": "_framework\/XebecPortal.Client.dll"
     },
     {
-      "hash": "sha256-pTWe4tBMvUBReBpVY4HY7CabOw9GBiYv6aCte8UCoy0=",
+      "hash": "sha256-zLb1ssuQiBNGCIsgVuim8Rn+pXsy7NkvxuwK8dAZ9PY=",
       "url": "_framework\/XebecPortal.Client.pdb"
     },
     {
@@ -1653,7 +1653,7 @@
       "url": "js\/JobPostingTest.js"
     },
     {
-      "hash": "sha256-l3NkJApmXoendt5mp9f4h0yRx8cwtW\/I12ARmFPLXCA=",
+      "hash": "sha256-QqoeAT5PCc19f+jdB7TQAuzt529Hn5MlGMPl\/H6XODU=",
       "url": "js\/test.js"
     },
     {
@@ -1669,5 +1669,5 @@
       "url": "XebecPortal.Client.bundle.scp.css"
     }
   ],
-  "version": "XnWXUUNn"
+  "version": "wRi4srvj"
 };

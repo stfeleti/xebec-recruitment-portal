@@ -89,7 +89,14 @@ using XebecPortal.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/jobpostingstest")]
+#nullable restore
+#line 3 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
+using XebecPortal.Client.JobPortalTestEnv.Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/jobpostings")]
     public partial class JobPostingsTest : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -98,10 +105,10 @@ using XebecPortal.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 224 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
-       
-
-    List<JobTest> jobs = new List<JobTest>
+#line 193 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
+ 
+    static string searchTerm = string.Empty;
+static List<JobTest> Jobs = new List<JobTest>
 {
 
             new JobTest
@@ -124,9 +131,6 @@ using XebecPortal.Shared;
                 Description = "blah blah blah blah blah",
                 Location = "Cape Town",
                 Compensation = "R10000"
-
-
-
             },
 
                 new JobTest
@@ -137,35 +141,57 @@ using XebecPortal.Shared;
                 Location = "Sandton",
                 Compensation = "R40000",
 
-
-
+            },
+              new JobTest
+            {
+                Id = 4,
+                Title = "Intern",
+                Description = "blah blah blah blah blah",
+                Location = "Durban",
+                Compensation = "R50000"
+            },
+              new JobTest
+            {
+                Id = 5,
+                Title = "Manager",
+                Description = "blah blah blah blah blah",
+                Location = "Cape Town",
+                Compensation = "R100000"
             },
 
-
-
-
     };
+
+
+    private static List<JobTest> SearchResults = Jobs;
+    private static bool isFound = false;    
+
+    private static void Search()
+    {
+        SearchResults = Jobs.FindAll(q => q.Title.ToLower().Equals(searchTerm.ToLower())); 
+        if(SearchResults == null || SearchResults.Count <= 0)
+            SearchResults = Jobs;
+       
+    }    
 
     bool IsClicked = false;
     private int ReturnedJobId = 0;
     private JobTest CurrentJob = null;
-
     private async Task On()
     {
         IsClicked = true;
-        ReturnedJobId = Int32.Parse(await jsr.InvokeAsync<string>("show_"));
-        CurrentJob = jobs.FirstOrDefault(q => q.Id == ReturnedJobId);
+        ReturnedJobId = Int32.Parse(await jsr.InvokeAsync<string>("show"));       
+       
+        CurrentJob = SearchResults.FirstOrDefault(q => q.Id == ReturnedJobId); 
+    
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
+        if(firstRender)
         {
-            await jsr.InvokeVoidAsync("initialize_");
+            await jsr.InvokeVoidAsync("initialize");
         }
     }
-
-
 
 
 #line default

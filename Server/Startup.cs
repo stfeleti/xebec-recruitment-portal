@@ -36,6 +36,17 @@ namespace XebecPortal.Server
            
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+              services.AddCors(o =>
+            {
+                o.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +67,8 @@ namespace XebecPortal.Server
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
+
+            app.UseCors("AllowAll");
 
             app.UseRouting();
 

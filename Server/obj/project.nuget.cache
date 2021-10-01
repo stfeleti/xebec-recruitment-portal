@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sv9vaGi3ES+eVKFUucO9XBgxh4BCSE6rxME/UtNhTl2B8nIXLlm79Yyqj3MlcgA1wcC+5MQ7VXmpgWlB2ttLZQ==",
+  "dgSpecHash": "zfMHaG1UJnw0CgLB+sx+DVtIuLq2UqgzD0RPT4K9HD3CJnmT1vMSg98V9NJqpPMECzDl9zOths6G8LBnGDs8nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\server\\XebecPortal.Server.csproj",
+  "projectFilePath": "C:\\Users\\Ashton\\OneDrive - Nebula\\course-work\\recruitment-portal-project\\XebecPortal\\Server\\XebecPortal.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ashton\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ashton\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

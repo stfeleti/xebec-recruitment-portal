@@ -105,10 +105,10 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 173 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
+#line 193 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
  
-
-    private List<CandidateTest> Candidates = new List<CandidateTest>
+    static string searchTerm = string.Empty;
+    private static List<CandidateTest> Candidates = new List<CandidateTest>
     {
 
 
@@ -116,6 +116,7 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         {
             Id = 1,
             Name = "Johnathan Snow",
+            JobAppliedFor = "Developer",
             YearsOfExp = 2,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -125,6 +126,7 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         {
             Id = 2,
             Name = "Edward Stark",
+            JobAppliedFor = "Lawyer",
             YearsOfExp = 8,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -134,6 +136,7 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         {
             Id = 3,
             Name = "Peter Parker",
+            JobAppliedFor = "Developer",
             YearsOfExp = 1,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -143,6 +146,7 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
         {
             Id = 4,
             Name = "Bruce Banner",
+            JobAppliedFor = "Cloud Engineer",
             YearsOfExp = 5,
             ExtraInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum nesciunt unde iusto quas rerumores quaerat eum velit totam!"
 
@@ -150,7 +154,15 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
 
     };
 
-   
+    private static List<CandidateTest> SearchResults = Candidates;
+    private static bool isFound = false;    
+
+    private static void Search()
+    {
+        SearchResults = Candidates.FindAll(q => q.JobAppliedFor.ToLower().Equals(searchTerm.ToLower())); 
+       
+    }    
+
     bool IsClicked = false;
     private int ReturnedCandidateId = 0;
     private CandidateTest CurrentCandidate = null;
@@ -158,7 +170,13 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
     {
         IsClicked = true;
         ReturnedCandidateId = Int32.Parse(await jsr.InvokeAsync<string>("show"));
-        CurrentCandidate = Candidates.FirstOrDefault(q => q.Id == ReturnedCandidateId);    
+       
+       
+        CurrentCandidate = SearchResults.FirstOrDefault(q => q.Id == ReturnedCandidateId); 
+    
+           
+            
+
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

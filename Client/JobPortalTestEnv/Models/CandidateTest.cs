@@ -15,5 +15,7 @@ namespace XebecPortal.Client.JobPortalTestEnv.Models
 
         public string ExtraInfo { get; set; }
 
+        public string JobAppliedFor { get; set; }
+
     }
 }
