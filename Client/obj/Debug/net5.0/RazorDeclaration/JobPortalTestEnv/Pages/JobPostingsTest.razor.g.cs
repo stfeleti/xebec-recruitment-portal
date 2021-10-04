@@ -168,8 +168,14 @@ static List<JobTest> Jobs = new List<JobTest>
     private static void Search()
     {
         SearchResults = Jobs.FindAll(q => q.Title.ToLower().Equals(searchTerm.ToLower())); 
-        if(SearchResults == null || SearchResults.Count <= 0)
-            SearchResults = Jobs;
+        
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 256 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\JobPostingsTest.razor"
+                                    
        
     }    
 
