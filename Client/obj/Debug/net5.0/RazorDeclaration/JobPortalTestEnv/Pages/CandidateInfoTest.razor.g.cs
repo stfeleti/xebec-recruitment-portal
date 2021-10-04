@@ -160,8 +160,16 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
     private static void Search()
     {
         SearchResults = Candidates.FindAll(q => q.JobAppliedFor.ToLower().Equals(searchTerm.ToLower())); 
-       if(SearchResults == null || SearchResults.Count <= 0)
-            SearchResults = Candidates;
+
+        //this is for when the search bar is empty
+       
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 250 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\CandidateInfoTest.razor"
+                                          
     }    
 
     bool IsClicked = false;
