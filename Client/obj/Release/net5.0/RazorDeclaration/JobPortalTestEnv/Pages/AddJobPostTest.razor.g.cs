@@ -82,6 +82,20 @@ using XebecPortal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Client\_Imports.razor"
+using XebecPortal.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/addjobpost")]
     public partial class AddJobPostTest : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +104,60 @@ using XebecPortal.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 158 "C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
+ 
+    //This is the model that we bind to the form
+    JobSampleTest job = new JobSampleTest();
+
+    //This is the event callback we use in the select drop down elements
+    [Parameter]
+    public EventCallback<string> ValueChanged
+    {
+        get;
+        set;
+    }
+
+    /*The function we trigger when we interact with the job type drop down
+    It simply binds the value from the drop down to the job type field in the model*/
+    private Task OnJobTypeChanged(ChangeEventArgs e)
+    {
+        job.JobType = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.JobType);
+    }
+
+    /*The function we trigger when we interact with the department drop down
+    It simply binds the value from the drop down to the department field in the model*/
+    private Task OnDepartmentChanged(ChangeEventArgs e)
+    {
+        job.Department = e.Value.ToString();
+        return ValueChanged.InvokeAsync(job.Department);
+    }
+
+    /*Here we send a post request to another port, different from the port we're
+    running our application from. This is to simulate us making an API call
+    to a third party vendor such as LinkedIn, or Indeed*/
+    private async Task OnValid()
+    {
+        
+        if(job != null)
+        {
+            var msg = await HttpClient.PostAsJsonAsync("https://localhost:3001/api/job", job);
+            if(msg.IsSuccessStatusCode)
+            {
+                 NavigationManager.NavigateTo("/successtest");   
+            }
+        }
+        
+    }
+
+  
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient HttpClient { get; set; }
     }
 }
 #pragma warning restore 1591

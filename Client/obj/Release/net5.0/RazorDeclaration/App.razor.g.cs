@@ -82,6 +82,13 @@ using XebecPortal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\Kian\Source\Repos\xebec-recruitment-portal\Client\_Imports.razor"
+using XebecPortal.Shared;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
