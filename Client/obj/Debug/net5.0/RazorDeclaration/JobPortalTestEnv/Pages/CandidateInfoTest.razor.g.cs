@@ -160,7 +160,8 @@ using XebecPortal.Client.JobPortalTestEnv.Models;
     private static void Search()
     {
         SearchResults = Candidates.FindAll(q => q.JobAppliedFor.ToLower().Equals(searchTerm.ToLower())); 
-       
+       if(SearchResults == null || SearchResults.Count <= 0)
+            SearchResults = Candidates;
     }    
 
     bool IsClicked = false;
