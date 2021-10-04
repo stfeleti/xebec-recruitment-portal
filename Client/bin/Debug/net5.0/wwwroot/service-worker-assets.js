@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-0PzcAkRMClsAGJ\/IO6JFGu0EDN38IMwhClGdy6mzo5Q=",
+      "hash": "sha256-l3RVF+SWLNqVH+nezRWoDFoBzDjIhv6BsbQHAFkWVy8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/XebecPortal.Shared.pdb"
     },
     {
-      "hash": "sha256-UncPZ52\/EBQThq7vPRp02NDNpwaWnla6TmdVpuy5aMw=",
+      "hash": "sha256-RrooiaJpLvBnhqHzoyUny7NJk1G9IZo\/Ted15DoRFkc=",
       "url": "_framework\/XebecPortal.Client.dll"
     },
     {
-      "hash": "sha256-zLb1ssuQiBNGCIsgVuim8Rn+pXsy7NkvxuwK8dAZ9PY=",
+      "hash": "sha256-wkJMYyZnl1DiItwYn8GyHO1VIVXnJyCjlEGGuE78KQI=",
       "url": "_framework\/XebecPortal.Client.pdb"
     },
     {
@@ -1669,5 +1669,5 @@
       "url": "XebecPortal.Client.bundle.scp.css"
     }
   ],
-  "version": "wRi4srvj"
+  "version": "HUeE0+te"
 };

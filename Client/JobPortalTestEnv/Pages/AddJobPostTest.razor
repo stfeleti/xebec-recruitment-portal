@@ -3,6 +3,8 @@
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
 
+<!---->
+
 <style>
 
     @@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
@@ -81,34 +83,42 @@
 
     <h1 class="mt-5">Add Job Post</h1>
 
+    <!--Here we attach the job model to the edit form
+        so as to bind values from each input to each field in the model-->
     <EditForm Model="job" OnValidSubmit="OnValid" class="add-job-container">
        
+       <!--These components are used to display error messages-->
+       <!--In this case, it will display error messages if we try to submit
+            the form with empty required fields-->
         <DataAnnotationsValidator />
         <ValidationSummary />
             
+            <!--Bind to the job title field in the model-->
             <input type="text" class="form-control w-50 mt-3" placeholder="Job Title" @bind-value="job.JobTitle">
 
    
         <div class="details">
 
 
-
+                <!--Bind to the description field in the model-->
                  <InputTextArea class="form-control input textarea" @bind-Value="job.Description"/>
 
 
 
             <div class="right">
 
-
+                    <!--Bind to the location field in the model-->
                     <input type="text" class="form-control right-input" placeholder="Location" @bind-value="job.Location">
 
+                    <!--Bind to the job type field in the model-->
                     <select class="custom-select right-input" id="inputGroupSelect01" @onchange="OnJobTypeChanged">
                         <option selected>-- Select Job Type --</option>
                         <option value="Full-time">Full-time</option>
                         <option value="Part-time">Part-time</option>
                         <option value="Contract">Contract</option>
                     </select>
-               
+
+                    <!--Bind to the department field in the model-->
                     <select class="custom-select right-input" id="inputGroupSelect01" @onchange="OnDepartmentChanged">
                         <option selected>-- Select Department --</option>
                         <option value="Accounting">Accounting</option>
@@ -116,7 +126,7 @@
                         <option value="I.T">I.T</option>
                     </select>
 
-
+                    <!--Bind to the compensation field in the model-->
                     <input type="text" class="form-control right-input" placeholder="Compensation" @bind-value="job.Compensation">
 
             </div>
@@ -135,8 +145,7 @@
             </div>
 
             <div class="btns">
-                <button class="btn btn-success btn-sm">Add Job Post</button>
-                @* <button class="btn btn-danger btn-sm">Cancel</button> *@
+                <button class="btn btn-success btn-sm">Add Job Post</button>              
             </div>
 
         </div>
@@ -145,40 +154,41 @@
 
 </div>
 
-<p>@job.JobTitle</p>
-<p>@job.Compensation</p>
-<p>@job.Department</p>
-<p>@job.Description</p>
-<p>@job.JobType</p>
-<p>@job.Location</p>
-
-
 @code
 {
+    //This is the model that we bind to the form
     JobSampleTest job = new JobSampleTest();
 
+    //This is the event callback we use in the select drop down elements
     [Parameter]
     public EventCallback<string> ValueChanged
     {
         get;
         set;
     }
+
+    /*The function we trigger when we interact with the job type drop down
+    It simply binds the value from the drop down to the job type field in the model*/
     private Task OnJobTypeChanged(ChangeEventArgs e)
     {
         job.JobType = e.Value.ToString();
         return ValueChanged.InvokeAsync(job.JobType);
     }
 
+    /*The function we trigger when we interact with the department drop down
+    It simply binds the value from the drop down to the department field in the model*/
     private Task OnDepartmentChanged(ChangeEventArgs e)
     {
         job.Department = e.Value.ToString();
         return ValueChanged.InvokeAsync(job.Department);
     }
 
-
+    /*Here we send a post request to another port, different from the port we're
+    running our application from. This is to simulate us making an API call
+    to a third party vendor such as LinkedIn, or Indeed*/
     private async Task OnValid()
     {
-        //https://localhost:3001/api/job
+        
         if(job != null)
         {
             var msg = await HttpClient.PostAsJsonAsync("https://localhost:3001/api/job", job);

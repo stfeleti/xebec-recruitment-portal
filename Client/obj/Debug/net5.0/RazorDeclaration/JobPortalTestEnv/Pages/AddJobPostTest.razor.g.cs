@@ -105,32 +105,41 @@ using Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 157 "C:\Users\Kian\source\repos\xebec-recruitment-portal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
+#line 158 "c:\Users\Ashton\OneDrive - Nebula\course-work\recruitment-portal-project\XebecPortal\Client\JobPortalTestEnv\Pages\AddJobPostTest.razor"
  
+    //This is the model that we bind to the form
     JobSampleTest job = new JobSampleTest();
 
+    //This is the event callback we use in the select drop down elements
     [Parameter]
     public EventCallback<string> ValueChanged
     {
         get;
         set;
     }
+
+    /*The function we trigger when we interact with the job type drop down
+    It simply binds the value from the drop down to the job type field in the model*/
     private Task OnJobTypeChanged(ChangeEventArgs e)
     {
         job.JobType = e.Value.ToString();
         return ValueChanged.InvokeAsync(job.JobType);
     }
 
+    /*The function we trigger when we interact with the department drop down
+    It simply binds the value from the drop down to the department field in the model*/
     private Task OnDepartmentChanged(ChangeEventArgs e)
     {
         job.Department = e.Value.ToString();
         return ValueChanged.InvokeAsync(job.Department);
     }
 
-
+    /*Here we send a post request to another port, different from the port we're
+    running our application from. This is to simulate us making an API call
+    to a third party vendor such as LinkedIn, or Indeed*/
     private async Task OnValid()
     {
-        //https://localhost:3001/api/job
+        
         if(job != null)
         {
             var msg = await HttpClient.PostAsJsonAsync("https://localhost:3001/api/job", job);
